@@ -1,0 +1,249 @@
+:root {
+  /* Primary */
+  --Light-red: #ff57571a;
+  --Orangey-yellow: #ffb01f1a;
+  --Green-teal: #00bd911a;
+  --Cobalt-blue: #1125d41a;
+
+  /* Gradients */
+  --Light-slate-blue: #7857ff;
+  /*(background)*/
+  --Light-royal-blue: #2e2be9;
+  /*(background)*/
+
+  --Violet-blue: #4e21ca;
+  /* (circle)*/
+  --Persian-blue: #2421ca00;
+  /* (circle):*/
+
+  /* Neutral */
+  --White: #ffffff;
+  --Pale-blue: #ebf1ff;
+  --Light-lavender: #c8c7ff;
+  --Dark-gray-blue: #303b5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Section 1 */
+.header {
+  width: 100%;
+  height: 360px;
+  text-align: center;
+  background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  border-radius: 0 0 40px 40px;
+  padding: 25px 20px;
+}
+
+.header p:nth-child(1) {
+  color: var(--Pale-blue);
+  opacity: .7;
+  font-size: 1.8rem;
+  margin-block-end: 3rem;
+}
+
+.header .circle {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .circle h1 {
+  color: var(--White);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.header .circle span {
+  color: var(--Light-lavender);
+  opacity: .5;
+  font-size: 1.7rem;
+  margin-block-start: .7rem;
+}
+
+.header h2 {
+  color: var(--White);
+  font-size: 2.2rem;
+  margin-block-start: 3rem;
+}
+
+.header p:nth-child(4) {
+  font-size: 1.6rem;
+  color: var(--Light-lavender);
+  opacity: .8;
+  margin-block-start: 1.5rem;
+  padding: 0 3rem;
+}
+
+/* Section 2 */
+.summary {
+  width: 360px;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.summary h2 {
+  font-size: 2.2rem;
+  color: var(--Dark-gray-blue);
+}
+
+.summary .info--box {
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  padding: 1.8rem 2rem;
+  font-size: 1.8rem;
+}
+.summary .info--box .info-content{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary .info--box .info-content p:nth-child(3){
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+.summary .info--box .info-content p:nth-child(3) span:nth-child(2){
+  color: var(--Dark-gray-blue);
+  opacity: .5;
+}
+.summary .b-red {
+  background: var(--Light-red);
+}
+
+.summary .b-red .info-content p:nth-child(2) {
+  color: #ff5757;
+  font-weight: bold;
+}
+
+.summary .b-yellow {
+  background: var(--Orangey-yellow);
+}
+.summary .b-yellow .info-content p:nth-child(2){
+  color: #ffb01f;
+  font-weight: bold;
+}
+
+.summary .b-green {
+  background: var(--Green-teal);
+}
+
+.summary .b-green .info-content p:nth-child(2){
+  color: #00bd91;
+  font-weight: bold;
+}
+
+.summary .b-blue {
+  background: var(--Cobalt-blue);
+}
+
+.summary .b-blue .info-content p:nth-child(2){
+  color: #1125d4;
+  font-weight: bold;
+}
+
+
+/* Button */
+.content-btn {
+  width: 365px;
+  margin: 3rem auto;
+}
+
+.content-btn .btn {
+  width: 350px;
+  padding: 2rem;
+  border-radius: 4rem;
+  border: none;
+  background: var(--Dark-gray-blue);
+  color: var(--White);
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.content-btn .btn:hover {
+  background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 728px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    width: 350px;
+    height: 500px;
+    border-radius: 4rem 0 0 4rem;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(120, 87, 255);
+  }
+
+  .header p:nth-child(1) {
+    font-size: 3rem;
+    margin-block-start: 2rem;
+  }
+
+  .header .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .header .circle h1 {
+    font-size: 6rem;
+  }
+
+  .header .circle span {
+    font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 2.8rem;
+  }
+
+  .header p:nth-child(4) {
+    font-size: 2rem;
+    margin-block-start: 2rem;
+    padding: 2rem;
+  }
+
+  .summary {
+    margin: 0;
+    width: 400px;
+    height: 500px;
+    padding: 2rem;
+    border-radius: 0 40px 40px 0;
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .attribution {
+    width: 100%;
+    
+  }
+}
